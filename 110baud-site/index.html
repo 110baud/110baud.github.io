@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>110 baud, LLC — AI Software for Mental Health Care</title>
+  <meta name="description" content="110 baud, LLC is a technology development practice founded by Todd Karakashian, MSN, PMHNP-BC. AI-based software for mental health care.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,300..500;1,9..40,300..500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #f5f1eb;
+      --color-bg-alt: #ece6da;
+      --color-header-bg: #2a2d3a;
+      --color-text: #3a3a3a;
+      --color-text-light: #6a6a6a;
+      --color-heading: #2a2d3a;
+      --color-accent: #c0522e;
+      --color-accent-hover: #a3421f;
+      --color-divider: #d4cbbf;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Source Serif 4', Georgia, serif;
+      --font-sans: 'DM Sans', Helvetica, sans-serif;
+      --max-width: 720px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+    }
+
+    /* ---- HEADER ---- */
+    .site-header {
+      background-color: var(--color-header-bg);
+      color: #f5f1eb;
+    }
+
+    .header-title-bg {
+      width: 100%;
+      aspect-ratio: 1280 / 400;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .header-inner {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 1.25rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .site-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.65;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .header-contact {
+      margin-top: 1.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+    }
+
+    .header-contact a {
+      color: #e8734a;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.2s ease;
+    }
+
+    .header-contact a:hover {
+      color: #f09070;
+    }
+
+    /* ---- TECHNO DIVIDERS ---- */
+    .techno-divider {
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+      line-height: 0;
+      position: relative;
+      background-color: var(--color-header-bg);
+    }
+
+    .techno-divider::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(42, 45, 58, 0.7);
+      pointer-events: none;
+    }
+
+    .techno-divider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .techno-divider--tall {
+      height: 80px;
+    }
+
+    /* ---- CENTERED CONTENT WRAPPER ---- */
+    .content-wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ---- ABOUT / INTRO ---- */
+    .about-section {
+      padding: 3.5rem 0 3rem;
+    }
+
+    .about-lead {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--color-heading);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section p {
+      margin-bottom: 1.25rem;
+    }
+
+    .logo-float {
+      float: right;
+      width: 190px;
+      margin: 0.2rem 0 1.25rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    /* ---- ALT BACKGROUND BAND ---- */
+    .section-band {
+      background-color: var(--color-bg-alt);
+    }
+
+    .section-band .band-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    /* ---- CONTENT SECTIONS ---- */
+    .content-section {
+      padding: 3rem 0;
+    }
+
+    .section-heading {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .content-section p,
+    .band-inner p {
+      margin-bottom: 1.25rem;
+    }
+
+    .content-section p:last-child,
+    .band-inner p:last-child {
+      margin-bottom: 0;
+    }
+
+    .baud-name {
+      font-style: italic;
+    }
+
+    /* ---- CONTACT SECTION ---- */
+    .contact-section {
+      padding: 3rem 0 4rem;
+    }
+
+    .contact-primary {
+      margin-bottom: 1.75rem;
+    }
+
+    .contact-primary a {
+      color: var(--color-accent);
+      text-decoration: none;
+      font-family: var(--font-sans);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .contact-primary a:hover {
+      color: var(--color-accent-hover);
+    }
+
+    .contact-email {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+
+    .contact-linkedin {
+      display: inline-block;
+    }
+
+    .contact-secondary {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      color: var(--color-text-light);
+      line-height: 1.8;
+    }
+
+    .contact-secondary a {
+      color: var(--color-text-light);
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-divider);
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .contact-secondary a:hover {
+      color: var(--color-text);
+      border-color: var(--color-text);
+    }
+
+    .contact-sep {
+      margin: 0 0.5rem;
+      opacity: 0.4;
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background-color: var(--color-header-bg);
+      color: #f5f1eb;
+      text-align: center;
+      padding: 2rem;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      opacity: 0.6;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 1.25rem 1.5rem 2rem;
+      }
+
+      .content-wrap {
+        padding: 0 1.5rem;
+      }
+
+      .section-band .band-inner {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .logo-float {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem;
+        width: 150px;
+      }
+
+      .about-section {
+        padding: 2.5rem 0 2rem;
+      }
+
+      .content-section {
+        padding: 2.5rem 0;
+      }
+
+      .contact-section {
+        padding: 2.5rem 0 3rem;
+      }
+
+      .techno-divider { height: 40px; }
+      .techno-divider--tall { height: 50px; }
+    }
+
+    /* ---- SUBTLE ENTRANCE ---- */
+    @media (prefers-reduced-motion: no-preference) {
+      .about-section,
+      .content-section,
+      .section-band,
+      .contact-section {
+        animation: fadeIn 0.6s ease-out both;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-title-bg" style="background-image: url('title.png');"></div>
+    <div class="header-inner">
+      <h1 class="sr-only">110 baud, LLC</h1>
+      <p class="site-subtitle">A technology development practice founded<br>by Todd Karakashian, MSN, PMHNP-BC</p>
+      <p class="header-contact"><span id="header-email"></span></p>
+    </div>
+  </header>
+
+  <div class="content-wrap">
+    <section class="about-section">
+      <img src="logo.png" alt="110 baud logo — stylized typewriter illustration" class="logo-float" width="190" height="190">
+      <p class="about-lead"><strong>110 baud</strong> is Todd Karakashian — a software developer and psychiatric nurse practitioner based in Portland, Oregon.</p>
+      <p>Todd designs and builds AI-based software for mental health care, emphasizing privacy, clinical integrity, and thoughtful human–machine collaboration.</p>
+      <p>Before entering health care, Todd worked as a software engineer in scientific data management, with roles at NASA's Jet Propulsion Laboratory and the Harvard-Smithsonian Center for Astrophysics. He later joined WebLogic, Inc., a startup developing enterprise systems infrastructure software. WebLogic was acquired by BEA Systems, and later by Oracle, where it became the foundation of Oracle's WebLogic Server product line.</p>
+      <p>Through 110 baud, Todd brings his engineering background together with his years of clinical experience to create intelligent, human-centered software that supports clinicians and patients in the delivery of care.</p>
+    </section>
+  </div>
+
+  <div class="techno-divider techno-divider--tall">
+    <img src="techno-1.png" alt="" role="presentation">
+  </div>
+
+  <div class="section-band">
+    <div class="band-inner">
+      <h2 class="section-heading">Clinical Background</h2>
+      <p>Todd has more than 10 years of experience in mental health care, including a decade in advanced practice as a psychiatric nurse practitioner and psychotherapist. He continues to maintain a psychiatric and psychotherapy practice part-time in Portland, providing care for adults and adolescents.</p>
+      <p>His dual expertise in technology and mental health allows him to design software that respects both data and people — aligning technical precision with clinical sensitivity.</p>
+    </div>
+  </div>
+
+  <div class="techno-divider">
+    <img src="techno-2.png" alt="" role="presentation">
+  </div>
+
+  <div class="content-wrap">
+    <section class="content-section">
+      <h2 class="section-heading">Why the name <span class="baud-name">110 baud</span>?</h2>
+      <p>The name recalls the earliest computer teletype interfaces — slow, deliberate, and human-paced. This reflects the practice's guiding interest: AI technology that helps people slow down, think clearly, and connect meaningfully, even in an increasingly frenetic world.</p>
+    </section>
+  </div>
+
+  <div class="techno-divider">
+    <img src="techno-3.png" alt="" role="presentation">
+  </div>
+
+  <div class="section-band">
+    <div class="band-inner">
+      <h2 class="section-heading">Compliance &amp; Privacy</h2>
+      <p>110 baud, LLC is experienced working within HIPAA-covered environments and maintains policies and safeguards consistent with privacy and security standards for protected health information (PHI), including entering into Business Associate Agreements when appropriate.</p>
+    </div>
+  </div>
+
+  <div class="techno-divider">
+    <img src="techno-1.png" alt="" role="presentation">
+  </div>
+
+  <div class="content-wrap">
+    <section class="contact-section">
+      <h2 class="section-heading">Contact</h2>
+      <div class="contact-primary">
+        <span id="contact-email" class="contact-email"></span>
+        <a href="https://www.linkedin.com/in/todd-karakashian-pmhnp-bab359" class="contact-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="contact-secondary">
+        <a href="https://github.com/110baud" target="_blank" rel="noopener">GitHub</a>
+        <span class="contact-sep">·</span>
+        <a href="https://www.toddk-np.com" target="_blank" rel="noopener">Psychiatric Practice</a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2025 110 baud, LLC. All rights reserved.
+  </footer>
+
+  <script>
+    (function() {
+      var u = 'toddk', d = '110baud', t = 'ai';
+      var addr = u + '@' + d + '.' + t;
+      var link = '<a href="mai' + 'lto:' + addr + '">' + addr + '</a>';
+      document.getElementById('header-email').innerHTML = link;
+      var cLink = '<a href="mai' + 'lto:' + addr + '" class="contact-email">' + addr + '</a>';
+      document.getElementById('contact-email').innerHTML = cLink;
+    })();
+  </script>
+
+</body>
+</html>

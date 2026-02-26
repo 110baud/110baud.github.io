@@ -1,0 +1,36 @@
+
+110 baud, LLC
+
+A technology development practice founded by Todd Karakashian, MSN, PMHNP-BC.
+
+⸻
+
+About
+
+110 baud, LLC is Todd Karakashian — a software developer and psychiatric nurse practitioner based in Portland, Oregon.
+
+Todd designs and builds AI-based software for mental health care, emphasizing privacy, clinical integrity, and thoughtful human–machine collaboration.
+
+Before entering health care, Todd worked as a software engineer in scientific data management, with roles at NASA’s Jet Propulsion Laboratory and the Harvard-Smithsonian Center for Astrophysics. He later joined WebLogic, Inc., a startup developing enterprise systems infrastructure software. WebLogic was acquired by BEA Systems, and later by Oracle, where it became the foundation of Oracle’s WebLogic Server product line.
+
+Through 110 baud, Todd brings his engineering background together with his years of clinical experience to create intelligent, human-centered software that supports clinicians and patients in the delivery of care.
+
+⸻
+
+Clinical Background
+
+Todd has more than 10 years of experience in mental health care, including a decade in advanced practice as a psychiatric nurse practitioner and psychotherapist. He continues to maintain a psychiatric and psychotherapy practice part-time in Portland, providing care for adults and adolescents. His dual expertise in technology and mental health allows him to design software that respects both data and people—aligning technical precision with clinical sensitivity.
+
+⸻
+
+Why the name “110 baud”?
+
+The name recalls the earliest computer teletype interfaces —slow, deliberate, and human-paced.
+This reflects the practice’s guiding interest: AI technology that helps people slow down, think clearly, and connect meaningfully, even in an increasing frenetic world.
+
+⸻
+
+Compliance & Privacy
+
+110 baud, LLC is experienced working within HIPAA-covered environments and maintains policies and safeguards consistent with privacy and security standards for protected health information (PHI), including entering into BAAs when appropriate.
+
